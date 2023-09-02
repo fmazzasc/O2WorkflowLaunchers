@@ -1,0 +1,10 @@
+{ "OutputDirector": {
+  "debug_mode": true,
+  "resfile": "AO2D_hyp_new_task.root",
+  "OutputDescriptors": [
+    {
+      "table": "AOD/MCHYPCANDS/0"
+    }
+  ],
+  "ntfmerge": 1
+} }
