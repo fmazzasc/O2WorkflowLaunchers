@@ -1,0 +1,73 @@
+{
+    "internal-dpl-clock": "",
+
+    "internal-dpl-injected-dummy-sink": "",
+    "internal-dpl-aod-spawner": "",
+    "internal-dpl-aod-index-builder": "",
+    "timestamp-task": {
+        "verbose": "false",
+        "rct-path": "RCT\/Info\/RunInformation",
+        "orbit-reset-path": "CTP\/Calib\/OrbitReset",
+        "ccdb-url": "http:\/\/alice-ccdb.cern.ch",
+        "isRun2MC": "false"
+    },
+
+    "bc-selection-task": {
+        "processRun2": "false",
+        "processRun3": "true"
+    },
+    "event-selection-task": {
+        "syst": "pp",
+        "muonSelection": "0",
+        "customDeltaBC": "-1",
+        "isMC": "false",
+        "processRun2": "false",
+        "processRun3": "true"
+    },
+
+    "track-propagation": {
+        "ccdb-url": "http:\/\/alice-ccdb.cern.ch",
+        "lutPath": "GLO\/Param\/MatLUT",
+        "geoPath": "GLO\/Config\/GeometryAligned",
+        "grpmagPath": "GLO\/Config\/GRPMagField",
+        "mVtxPath": "GLO\/Calib\/MeanVertex",
+        "minPropagationDistance": "5",
+        "processStandard": "false",
+        "processCovariance": "true"
+    },
+
+    "centrality-table": {
+        "processRun3": "true",
+        "processRun2": "false",
+        "doNotCrashOnNull": "true"
+    },
+
+    "kink-analysis":{
+        "processSim":"1",
+        "processReco":"0",
+        "cfgParticleSpec":"8",
+    
+        "zDiff":"15",
+        "cfgCutVertex":"10",
+        "phiDiff":"5",
+        "cfgLUTpath":"GLO/Param/MatLUT",
+        "cfgNsigmaTPCdaughter":"3",
+        "cfgGRPpath":"GLO/GRP/GRP",
+        "cfgIsMC":"1",
+        "dcaKinkDtopv":"0.2",
+        "qTupper":"0.2",
+        "qTLower":"0.1",
+        "cfgLowerHistLimit":"1.1",
+        "cfgGRPmagPath":"GLO/Config/GRPMagField",
+        "geoPath":"GLO/Config/GeometryAligned",
+        "cfgDaughterCharge":"1",
+        "cfgMotherCharge":"1",
+        "cfgUpperHistLimit":"1.4",
+        "mVtxPath":"GLO/Calib/MeanVertex","kinkAngle":"1",
+        "ccdb-url":"http://alice-ccdb.cern.ch","cfgBz":"-999",
+        "cfgMaterialCorrection":"2","cfgCutEta":"0.8"
+    },
+
+    "internal-dpl-aod-global-analysis-file-sink": "",
+    "internal-dpl-aod-writer": ""
+}
